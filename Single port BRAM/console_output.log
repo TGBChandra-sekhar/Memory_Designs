@@ -1,0 +1,26 @@
+INFO: [Vivado 12-12493] Simulation top is 'single_port_ram_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Tools/Xilinx_Vivado/GNSS_SAC/BRAM/BRAM.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Time resolution is 1 ps
+------ WRITE OPERATION ------
+Writing: addr=0 | Write_data=0 | Read_data=x
+Writing: addr=1 | Write_data=10 | Read_data=x
+Writing: addr=2 | Write_data=20 | Read_data=x
+Writing: addr=3 | Write_data=30 | Read_data=x
+Writing: addr=4 | Write_data=40 | Read_data=x
+Writing: addr=5 | Write_data=50 | Read_data=x
+Writing: addr=6 | Write_data=60 | Read_data=x
+Writing: addr=7 | Write_data=70 | Read_data=x
+Writing: addr=8 | Write_data=80 | Read_data=x
+Writing: addr=9 | Write_data=90 | Read_data=x
+------ READ OPERATION ------
+Reading: addr=0 | Read_data=0
+Reading: addr=1 | Read_data=10
+Reading: addr=2 | Read_data=20
+Reading: addr=3 | Read_data=30
+Reading: addr=4 | Read_data=40
+Reading: addr=5 | Read_data=50
+Reading: addr=6 | Read_data=60
+Reading: addr=7 | Read_data=70
+Reading: addr=8 | Read_data=80
+Reading: addr=9 | Read_data=90
