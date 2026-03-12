@@ -30,16 +30,16 @@ module single_port_bram_tb();
         for(i = 0; i < 10; i = i + 1) begin
             addr = i;
             write_data  = i * 10;
-            $display("Writing: addr=%0d | Write_data=%0d | Read_data=%0d", addr, write_data,read_data);
             #10;
+            $display("Writing: addr=%0d | Write_data=%0d | Read_data=%0d", addr, write_data,read_data);  
         end
 
         $display("------ READ OPERATION ------");
         we = 0; 
         for(i = 0; i < 10; i = i + 1) begin
             addr = i;
-            $display("Reading: addr=%0d | Read_data=%0d", addr, read_data);
             #10;
+            $display("Reading: addr=%0d | Read_data=%0d", addr, read_data);
         end
         #50;
     end
