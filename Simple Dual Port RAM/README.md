@@ -93,14 +93,11 @@ Reading: addr=3 data=30
 ```
 simple-dual-port-ram/
 │
-├── rtl/
-│   └── simple_dual_port_ram.v
+├── simple_dual_port_ram.v
 │
-├── tb/
-│   └── simple_dual_port_ram_tb.v
+├── tb_simple_dual_port_ram.v
 │
-├── sim/
-│   └── simulation.log
+├── simulation.log
 │
 └── README.md
 ```
