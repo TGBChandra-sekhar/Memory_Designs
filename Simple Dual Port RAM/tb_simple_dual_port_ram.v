@@ -33,7 +33,7 @@ module tb_dual_port_ram();
         w_addr = i;
         //r_addr = i;
         write_data = i*10;
-        $display("Writing : add = %0d | write_data = %0d", w_addr,write_data);
+        $display("Writing : addr = %0d | write_data = %0d", w_addr,write_data);
         #10;
      end
      
@@ -41,8 +41,9 @@ module tb_dual_port_ram();
      we = 0;
      for (i=0; i<10; i = i+1) begin
         r_addr = i;
-        $display("Reading : add = %0d | read_data_data = %0d", r_addr,read_data);
         #10;
+        $display("Reading : addr = %0d | read_data_data = %0d", r_addr,read_data);
+        //#10;
      end 
          
     end
