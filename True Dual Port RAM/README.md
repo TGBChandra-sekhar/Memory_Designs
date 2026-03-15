@@ -83,6 +83,7 @@ Both ports access a **shared memory array** and operate **independently**, even 
   - Correct memory behavior
 ---
 ## Example Simulation Output
+```
 PORT_A WRITE OPERATION
 Writing: ADDR=0 DATA=0
 Writing: ADDR=1 DATA=5
@@ -95,9 +96,10 @@ Reading: ADDR=2 DATA=10
 
 SIMULTANEOUS OPERATION
 ADDR_A=5 WRITE_DATA_A=25 | ADDR_B=5 READ_DATA_B=25
-
+```
 ---
 ## Project Structure
+```
 true-dual-port-ram/
 │
 ├── true_dual_port_ram.v
@@ -107,7 +109,7 @@ true-dual-port-ram/
 ├── simulation.log
 │
 └── README.md
-
+```
 ---
 ## Notes
   - Memory contents are undefined at power-up unless written.
