@@ -1,53 +1,44 @@
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Tools/Xilinx_Vivado/GNSS_SAC/BRAM/BRAM.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "tb_true_dual_port_ram_behav -key {Behavioral:sim_1:Functional:tb_true_dual_port_ram} -tclbatch {tb_true_dual_port_ram.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
+Compiling module xil_defaultlib.true_dual_port_ram_default
+Compiling module xil_defaultlib.tb_true_dual_port_ram
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_true_dual_port_ram_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
 Time resolution is 1 ps
-source tb_true_dual_port_ram.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-PORT_A WRITE OPERATION
-Writing: ADDR=0 | DATA=10
-Writing: ADDR=1 | DATA=11
-Writing: ADDR=2 | DATA=12
-Writing: ADDR=3 | DATA=13
-Writing: ADDR=4 | DATA=14
-Writing: ADDR=5 | DATA=15
-Writing: ADDR=6 | DATA=16
-Writing: ADDR=7 | DATA=17
-Writing: ADDR=8 | DATA=18
-Writing: ADDR=9 | DATA=19
-PORT_B READ OPERATION
-Reading: ADDR=0 | DATA=10
-Reading: ADDR=1 | DATA=11
-Reading: ADDR=2 | DATA=12
-Reading: ADDR=3 | DATA=13
-Reading: ADDR=4 | DATA=14
-Reading: ADDR=5 | DATA=15
-Reading: ADDR=6 | DATA=16
-Reading: ADDR=7 | DATA=17
-Reading: ADDR=8 | DATA=18
-Reading: ADDR=9 | DATA=19
-SIMULATANEOUS OPERATION
- ADDR=0 , WRITE_DATA_A=20 |  ADDR=0 , READ_DATA_B=20
- ADDR=1 , WRITE_DATA_A=21 |  ADDR=1 , READ_DATA_B=21
- ADDR=2 , WRITE_DATA_A=22 |  ADDR=2 , READ_DATA_B=22
- ADDR=3 , WRITE_DATA_A=23 |  ADDR=3 , READ_DATA_B=23
- ADDR=4 , WRITE_DATA_A=24 |  ADDR=4 , READ_DATA_B=24
- ADDR=5 , WRITE_DATA_A=25 |  ADDR=5 , READ_DATA_B=25
- ADDR=6 , WRITE_DATA_A=26 |  ADDR=6 , READ_DATA_B=26
- ADDR=7 , WRITE_DATA_A=27 |  ADDR=7 , READ_DATA_B=27
- ADDR=8 , WRITE_DATA_A=28 |  ADDR=8 , READ_DATA_B=28
- ADDR=9 , WRITE_DATA_A=29 |  ADDR=9 , READ_DATA_B=29
+
+**PORT_A WRITE OPERATION**
+Writing: Addr=0 | Write_data=10
+Writing: Addr=1 | Write_data=11
+Writing: Addr=2 | Write_data=12
+Writing: Addr=3 | Write_data=13
+Writing: Addr=4 | Write_data=14
+Writing: Addr=5 | Write_data=15
+Writing: Addr=6 | Write_data=16
+Writing: Addr=7 | Write_data=17
+Writing: Addr=8 | Write_data=18
+Writing: Addr=9 | Write_data=19
+
+**PORT_B READ OPERATION**
+Reading: Addr=0 | Read_data=10
+Reading: Addr=1 | Read_data=11
+Reading: Addr=2 | Read_data=12
+Reading: Addr=3 | Read_data=13
+Reading: Addr=4 | Read_data=14
+Reading: Addr=5 | Read_data=15
+Reading: Addr=6 | Read_data=16
+Reading: Addr=7 | Read_data=17
+Reading: Addr=8 | Read_data=18
+Reading: Addr=9 | Read_data=19
+
+**SIMULATANEOUS OPERATION**
+PORT_A: Write_addr=0 , Write_data=20 |PORT_B: Read_addr=0 , Read_data=20
+PORT_A: Write_addr=1 , Write_data=21 |PORT_B: Read_addr=1 , Read_data=21
+PORT_A: Write_addr=2 , Write_data=22 |PORT_B: Read_addr=2 , Read_data=22
+PORT_A: Write_addr=3 , Write_data=23 |PORT_B: Read_addr=3 , Read_data=23
+PORT_A: Write_addr=4 , Write_data=24 |PORT_B: Read_addr=4 , Read_data=24
+PORT_A: Write_addr=5 , Write_data=25 |PORT_B: Read_addr=5 , Read_data=25
+PORT_A: Write_addr=6 , Write_data=26 |PORT_B: Read_addr=6 , Read_data=26
+PORT_A: Write_addr=7 , Write_data=27 |PORT_B: Read_addr=7 , Read_data=27
+PORT_A: Write_addr=8 , Write_data=28 |PORT_B: Read_addr=8 , Read_data=28
+PORT_A: Write_addr=9 , Write_data=29 |PORT_B: Read_addr=9 , Read_data=29
 $finish called at time : 743 ns : File "D:/Tools/Xilinx_Vivado/GNSS_SAC/BRAM/BRAM.srcs/sim_1/new/tb_true_dual_port_ram.v" Line 170
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_true_dual_port_ram_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:16 ; elapsed = 00:00:15 . Memory (MB): peak = 1644.203 ; gain = 11.172
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1649.508 ; gain = 0.551
