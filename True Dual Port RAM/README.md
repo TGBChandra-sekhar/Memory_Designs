@@ -132,3 +132,7 @@ true-dual-port-ram/
 
 ---
 ##  Author
+**Chandra Sekhar Tanuku**
+* B.Tech Electronics and Communication Engineering
+* Focus Areas: **VLSI Design, FPGA, Digital Communication Systems**
+---
