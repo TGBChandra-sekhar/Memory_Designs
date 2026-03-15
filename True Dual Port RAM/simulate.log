@@ -30,15 +30,15 @@ Reading: Addr=8 | Read_data=18
 Reading: Addr=9 | Read_data=19
 
 **SIMULATANEOUS OPERATION**
-PORT_A: Write_addr=0 , Write_data=20 |PORT_B: Read_addr=0 , Read_data=20
-PORT_A: Write_addr=1 , Write_data=21 |PORT_B: Read_addr=1 , Read_data=21
-PORT_A: Write_addr=2 , Write_data=22 |PORT_B: Read_addr=2 , Read_data=22
-PORT_A: Write_addr=3 , Write_data=23 |PORT_B: Read_addr=3 , Read_data=23
-PORT_A: Write_addr=4 , Write_data=24 |PORT_B: Read_addr=4 , Read_data=24
-PORT_A: Write_addr=5 , Write_data=25 |PORT_B: Read_addr=5 , Read_data=25
-PORT_A: Write_addr=6 , Write_data=26 |PORT_B: Read_addr=6 , Read_data=26
-PORT_A: Write_addr=7 , Write_data=27 |PORT_B: Read_addr=7 , Read_data=27
-PORT_A: Write_addr=8 , Write_data=28 |PORT_B: Read_addr=8 , Read_data=28
-PORT_A: Write_addr=9 , Write_data=29 |PORT_B: Read_addr=9 , Read_data=29
+PORT_A: Write_addr=0 , Write_data=20 | PORT_B: Read_addr=0 , Read_data=20
+PORT_A: Write_addr=1 , Write_data=21 | PORT_B: Read_addr=1 , Read_data=21
+PORT_A: Write_addr=2 , Write_data=22 | PORT_B: Read_addr=2 , Read_data=22
+PORT_A: Write_addr=3 , Write_data=23 | PORT_B: Read_addr=3 , Read_data=23
+PORT_A: Write_addr=4 , Write_data=24 | PORT_B: Read_addr=4 , Read_data=24
+PORT_A: Write_addr=5 , Write_data=25 | PORT_B: Read_addr=5 , Read_data=25
+PORT_A: Write_addr=6 , Write_data=26 | PORT_B: Read_addr=6 , Read_data=26
+PORT_A: Write_addr=7 , Write_data=27 | PORT_B: Read_addr=7 , Read_data=27
+PORT_A: Write_addr=8 , Write_data=28 | PORT_B: Read_addr=8 , Read_data=28
+PORT_A: Write_addr=9 , Write_data=29 | PORT_B: Read_addr=9 , Read_data=29
 $finish called at time : 743 ns : File "D:/Tools/Xilinx_Vivado/GNSS_SAC/BRAM/BRAM.srcs/sim_1/new/tb_true_dual_port_ram.v" Line 170
 relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1649.508 ; gain = 0.551
