@@ -37,26 +37,26 @@ module tb_true_dual_port_ram();
         {clk_a,we_a,addr_a,write_data_a} = 0;
         {clk_b,we_b,addr_b,write_data_b} = 0;
         #20;
-
-        $display("PORT_A WRITE OPERATION");
+        
+        $display("\n **PORT_A WRITE OPERATION**");
         we_a = 1;
         for(i = 0; i<10; i=i+1)begin
             @(posedge clk_a);
             addr_a = i;
             write_data_a = i+10;
-            $display("Writing: ADDR=%0d | DATA=%0d",addr_a,write_data_a);   
+            $display(" Writing: Addr=%0d | Write_data=%0d",addr_a,write_data_a);   
         end
         #20 we_a = 0;
         
-        $display("PORT_B READ OPERATION");
+        $display("\n **PORT_B READ OPERATION**");
         for(i = 0; i<10; i=i+1)begin
             @(posedge clk_b);
             addr_b = i; 
             @(posedge clk_b);
-            $display("Reading: ADDR=%0d | DATA=%0d",addr_b,read_data_b);
+            $display(" Reading: Addr=%0d | Read_data=%0d",addr_b,read_data_b);
         end
         
-        $display("SIMULATANEOUS OPERATION");
+        $display("\n **SIMULATANEOUS OPERATION**");
         we_a = 1; // Write
         we_b = 0; // Read
         
@@ -69,7 +69,7 @@ module tb_true_dual_port_ram();
             @(posedge clk_b);
             addr_b = i;
             @(posedge clk_b);
-            $display(" ADDR=%0d , WRITE_DATA_A=%0d |  ADDR=%0d , READ_DATA_B=%0d",addr_a,write_data_a,addr_b,read_data_b);
+            $display(" PORT_A: Write_addr=%0d , Write_data=%0d |PORT_B: Read_addr=%0d , Read_data=%0d",addr_a,write_data_a,addr_b,read_data_b);
         end
         we_a = 0;
         
