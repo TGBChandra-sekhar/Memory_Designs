@@ -1,19 +1,14 @@
 `timescale 1ns / 1ps
 
-module rom (
-    clk, 
-    en, 
-    addr, 
-    dout
+module rom #(
+    parameter DATA_WIDTH = 20,
+    parameter ADDR_WIDTH = 6
+    )(
+    input  clk,
+    input  en,
+    input  [ADDR_WIDTH-1:0] addr,
+    output [DATA_WIDTH-1:0] dout
     );
-     
-    parameter DATA_WIDTH = 20;
-    parameter ADDR_WIDTH = 6;
-    input  clk;
-    input  en;
-    input  [ADDR_WIDTH-1:0] addr;
-    output [DATA_WIDTH-1:0] dout;
-    
     reg [19:0] data;
 
     always @(posedge clk) begin
