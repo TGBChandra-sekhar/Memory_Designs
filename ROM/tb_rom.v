@@ -23,7 +23,7 @@ module tb_rom();
     
     initial begin
         {clk,en,addr} = 0;
-        #20;
+        #5;
         $display("\n **READ ONLY MEMORY**");
         en = 1;
         for(i = 0; i<DEPTH; i=i+1) begin
