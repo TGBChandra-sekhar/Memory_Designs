@@ -31,9 +31,13 @@ Async FIFO provides:
 ---
 
 ## 3. Basic Architecture
-![Async FIFO Architecture](images/async_fifo.png)
----
+## Async FIFO Architecture
 
+<p align="center">
+  <img src="C:\Users\Tanuku Devisaikumar\OneDrive - Aditya Educational Institutions\Pictures\Screenshots\Async_FIFO.gif" width="650">
+  <br>
+  <em>Asynchronous FIFO with Gray-coded pointer synchronization</em>
+</p>
 
 ---
 
