@@ -1,0 +1,48 @@
+Compiling module xil_defaultlib.sync_fifo_default
+Compiling module xil_defaultlib.tb_sync_fifo
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_sync_fifo_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Time resolution is 1 ps
+
+ Writing data into FIFO 
+WRITE: Data = 0064
+WRITE: Data = 0065
+WRITE: Data = 0066
+WRITE: Data = 0067
+WRITE: Data = 0068
+WRITE: Data = 0069
+WRITE: Data = 006a
+WRITE: Data = 006b
+WRITE: Data = 006c
+WRITE: Data = 006d
+WRITE: Data = 006e
+WRITE: Data = 006f
+WRITE: Data = 0070
+WRITE: Data = 0071
+WRITE: Data = 0072
+WRITE: Data = 0073
+FIFO FULL asserted correctly
+
+ Reading data from FIFO 
+READ: Data = 0064
+READ: Data = 0066
+READ: Data = 0068
+READ: Data = 006a
+READ: Data = 006c
+READ: Data = 006e
+READ: Data = 0070
+READ: Data = 0072
+READ: Data = 0073
+READ: Data = 0073
+READ: Data = 0073
+READ: Data = 0073
+READ: Data = 0073
+READ: Data = 0073
+READ: Data = 0073
+READ: Data = 0073
+FIFO EMPTY asserted correctly
+
+--- Simultaneous Read & Write ---
+SIMUL READ DATA = 0073
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 3369.473 ; gain = 0.000
