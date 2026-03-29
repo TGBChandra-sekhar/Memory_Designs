@@ -31,7 +31,7 @@ Async FIFO provides:
 ---
 
 ## 3. Basic Architecture
-
+![Async FIFO Architecture](images/async_fifo.png)
 ---
 
 
