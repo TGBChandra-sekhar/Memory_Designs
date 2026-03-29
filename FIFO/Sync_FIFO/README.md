@@ -1,12 +1,12 @@
 # Synchronous FIFO (Sync FIFO)
 
-## 📌 Overview
+##  Overview
 This project implements a **parameterized Synchronous FIFO (First-In First-Out)** buffer in **Verilog HDL**, where both read and write operations are performed using a **single common clock**.  
 The design is suitable for buffering data between modules operating in the **same clock domain**.
 
 ---
 
-## ⚙️ Key Features
+##  Key Features
 - Single-clock synchronous FIFO architecture  
 - Parameterizable data width and depth  
 - Full and Empty flag generation  
@@ -16,7 +16,7 @@ The design is suitable for buffering data between modules operating in the **sam
 
 ---
 
-## 🧱 FIFO Architecture
+##  FIFO Architecture
 - **Write Pointer (wptr):** Controls write address increment  
 - **Read Pointer (rptr):** Controls read address increment  
 - **Memory Array:** Stores FIFO data  
@@ -28,7 +28,7 @@ Both pointers are updated on the **same clock edge**, ensuring simple control lo
 
 ---
 
-## 🔌 Interface Description
+##  Interface Description
 
 | Signal | Direction | Description |
 |------|----------|-------------|
@@ -43,7 +43,7 @@ Both pointers are updated on the **same clock edge**, ensuring simple control lo
 
 ---
 
-## 📐 Parameters
+##  Parameters
 
 | Parameter | Description |
 |---------|-------------|
@@ -52,7 +52,7 @@ Both pointers are updated on the **same clock edge**, ensuring simple control lo
 
 ---
 
-## 🧪 Verification
+##  Verification
 - Self-checking testbench written in Verilog  
 - Verified correct FIFO behavior for:
   - Full and empty conditions  
@@ -64,24 +64,24 @@ Both pointers are updated on the **same clock edge**, ensuring simple control lo
 
 ---
 
-## 🛠 Tools Used
+##  Tools Used
 - Verilog HDL  
 - Xilinx Vivado  
 - QuestaSim / ModelSim  
 
 ---
-
-## 📁 Directory Structure
+```
+##  Directory Structure
 Sync_FIFO/
 ├── sync_fifo.v
 ├── tb_sync_fifo.v
 ├── simulate.log
 ├── waveform.png
 └── README.md
-
+```
 ---
 
-## 🚀 Applications
+##  Applications
 - Data buffering in synchronous digital systems  
 - Producer–consumer architectures  
 - Communication interfaces  
@@ -89,11 +89,9 @@ Sync_FIFO/
 
 ---
 
-## 👤 Author
-**Chandra Sekhar**  
-VLSI / RTL Design Enthusiast  
+## Author
 
+**Chandra Sekhar Tanuku**
+* B.Tech Electronics and Communication Engineering
+* Focus Areas: **VLSI Design, FPGA, Digital Communication Systems**
 ---
-
-## 📜 License
-This project is intended for **academic and learning purposes**.
