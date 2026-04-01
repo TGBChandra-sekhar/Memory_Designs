@@ -30,9 +30,9 @@ module wptr_handler #(
     assign g_wptr_next = (b_wptr_next>>1) ^ b_wptr_next;  // Convert binary to gray code
 
     // Check if the FIFO is full
-     assign wfull_val=((g_wptr_next[ADDR_WIDTH] !=g_rptr_sync[ADDR_WIDTH] ) &&
-     (g_wptr_next[ADDR_WIDTH-1] !=g_rptr_sync[ADDR_WIDTH-1]) &&
-     (g_wptr_next[ADDR_WIDTH-2:0]==g_rptr_sync[ADDR_WIDTH-2:0]));
+     assign wfull_val = (( g_wptr_next[ADDR_WIDTH] !=g_rptr_sync[ADDR_WIDTH] ) &&
+     (g_wptr_next[ADDR_WIDTH-1] != g_rptr_sync[ADDR_WIDTH-1]) &&
+     (g_wptr_next[ADDR_WIDTH-2:0] == g_rptr_sync[ADDR_WIDTH-2:0]));
 
 
     always @(posedge wclk or negedge wrst_n) begin
