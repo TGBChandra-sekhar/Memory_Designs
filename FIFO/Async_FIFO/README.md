@@ -44,9 +44,9 @@ Async FIFO solves these problems by:
 
 **Main blocks:**
 - Dual-port memory
-- Write pointer logic (write clock domain)
-- Read pointer logic (read clock domain)
-- Gray-code pointer synchronizers
+- Write pointer Handler (write clock domain)
+- Read pointer Handler (read clock domain)
+- Gray-code pointer (2-FF) synchronizers
 - Full and Empty flag generation
 
 ---
