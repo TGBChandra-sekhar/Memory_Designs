@@ -226,3 +226,11 @@ Async FIFOs are **one of the most common CDC structures in real silicon**.
 - Clifford Cummings – *Simulation and Synthesis Techniques for Asynchronous FIFO Design*  
 - Sunburst Design – Async FIFO Technical Papers  
 - FPGA vendor CDC guidelines (Xilinx / Intel)
+
+---
+## Author
+
+**Chandra Sekhar Tanuku**
+* B.Tech Electronics and Communication Engineering
+* Focus Areas: **VLSI Design, FPGA, Digital Communication Systems**
+---
