@@ -40,7 +40,7 @@ Async FIFO solves these problems by:
 
 ### Async FIFO Architecture
 
-![Async FIFO Architecture](async_fifo_architecture.png)
+![Async FIFO Architecture](Async_FIFO.png)
 
 **Main blocks:**
 - Dual-port memory
